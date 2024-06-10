@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('norse-bold-webfont.woff2') format('woff2'),
+         url('norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+  --gray : #f9fafb;
+  --white : #ffffff;
+  --button-green: #596d48;
+
+
+}
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding:0;
+  margin: 0;
+  border: 0;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.image-container{
+  background-image: url(image.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 35%;
+  position: relative;
+
+  
+
+}
+.image-container>.logo{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+}
+.image-container>.logo>img{
+  width: auto;
+  height: 80%;
+
+}
+.image-container>.logo>.name{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: norsebold, serif;
+  font-size: 400%;
+}
+
+.content-container{
+  width: 65%;
+}
+.intro{
+  font-weight: 600;
+  font-size: 110%;
+  background-color: var(--gray);
+  height: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 40px;
+}
+form{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 66%;
+}
+.container2{
+  height: 66%;
+}
+.input-form{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  padding: 40px;
+  justify-content: space-around;
+
+  
+  
+}
+.input-form>p{
+  font-size: 150%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 80%;
+}
+
+.form-container{
+  display: flex;
+  gap: 10%;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: norsebold;
+  width: 40%;
+
+}
+.input-container > input{
+  font-family: serif;
+  width: min(300px, 100%);
+  height: 30px;
+  border: 1px #E5E7EB solid;
+  border-radius: 5px;
+  
+}
+.input-container>input:focus{
+  outline: none;
+}
+.input-container > input:focus:valid{
+  border: 1px green solid;
+}
+.input-container>input:focus:invalid{
+  border: 1px red solid;
+}
+.signup{
+  background-color: var(--gray);
+  height: 50%;
+  padding: 40px;
+}
+.signup>button{
+  height: 40px;
+  width: min(300px, 30%);
+  font-weight: 800;
+  text-align: center;
+  background-color: var(--button-green);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+.signup a{
+  text-decoration:none;
+  color: var(--button-green);
+  font-weight: 650;
+}
